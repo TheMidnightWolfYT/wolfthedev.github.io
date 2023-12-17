@@ -17,6 +17,7 @@ header, footer {
     padding: 1em;
     text-align: center;
     width: 100%;
+    z-index: 2; /* Ensure header and footer are above the content */
 }
 
 header {
@@ -65,6 +66,8 @@ footer {
     margin-top: auto;
     background-color: #007bff; /* Light mode footer color */
     color: #fff;
+    position: fixed;
+    bottom: 0;
 }
 
 body.dark-mode footer {
@@ -77,19 +80,17 @@ body.dark-mode footer {
     right: 10px;
     cursor: pointer;
     font-size: 16px;
+    z-index: 1000; /* Ensure toggle is above content */
 }
 
 /* Added sticky navigation styles */
 .navbar {
     background-color: #343a40;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 body.dark-mode .navbar {
     background-color: #343a40;
-}
-
-.navbar.fixed-top {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
