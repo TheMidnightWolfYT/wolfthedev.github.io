@@ -14,13 +14,11 @@ header, footer {
     padding: 1em;
     text-align: center;
     width: 100%;
-    z-index: 1000;
 }
 
 header {
     background-color: #343a40; /* Dark mode header color */
     color: #fff;
-    position: fixed;
 }
 
 body.dark-mode header {
@@ -62,8 +60,6 @@ p {
 footer {
     background-color: #343a40; /* Light mode footer color */
     color: #fff;
-    position: fixed;
-    bottom: 0;
 }
 
 body.dark-mode footer {
@@ -76,4 +72,19 @@ body.dark-mode footer {
     right: 10px;
     cursor: pointer;
     font-size: 16px;
+}
+
+/* Added sticky navigation styles */
+.navbar {
+    background-color: #343a40;
+}
+
+body.dark-mode .navbar {
+    background-color: #343a40;
+}
+
+.navbar.fixed-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
