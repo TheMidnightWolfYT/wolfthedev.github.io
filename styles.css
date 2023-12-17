@@ -21,8 +21,8 @@ header, footer {
 }
 
 header {
-    background-color: #007bff; /* Light mode header color */
-    color: #fff;
+    background-color: #f8f9fa; /* Light mode header color */
+    color: #333;
 }
 
 body.dark-mode header {
@@ -64,10 +64,11 @@ p {
 
 footer {
     margin-top: auto;
-    background-color: #007bff; /* Light mode footer color */
-    color: #fff;
+    background-color: #f8f9fa; /* Light mode footer color */
+    color: #333;
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 body.dark-mode footer {
