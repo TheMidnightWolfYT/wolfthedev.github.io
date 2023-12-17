@@ -2,29 +2,34 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333; /* Default text color */
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
-    background-color: #222; /* Dark mode background color */
-    color: #fff; /* Dark mode text color */
+    background-color: #222;
+    color: #fff;
 }
 
-header {
-    background-color: #007bff; /* Light mode header color */
-    color: #fff;
+header, footer {
     padding: 1em;
     text-align: center;
-    position: fixed;
     width: 100%;
     z-index: 1000;
 }
 
+header {
+    background-color: #343a40; /* Light mode header color */
+    color: #fff;
+    position: fixed;
+}
+
+body.dark-mode header {
+    background-color: #555; /* Dark mode header color */
+}
+
 section {
     max-width: 800px;
-    margin: 6em auto 2em; /* Adjusted margin to accommodate fixed header */
+    margin: 6em auto 2em;
     padding: 2em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,7 +37,7 @@ section {
 }
 
 section.dark-mode {
-    background-color: #333; /* Dark mode section background color */
+    background-color: #333;
 }
 
 h1, h2, h3 {
@@ -55,14 +60,14 @@ p {
 }
 
 footer {
-    background-color: #007bff; /* Light mode footer color */
+    background-color: #343a40; /* Light mode footer color */
     color: #fff;
-    text-align: center;
-    padding: 1em;
     position: fixed;
     bottom: 0;
-    width: 100%;
-    z-index: 1000;
+}
+
+body.dark-mode footer {
+    background-color: #555; /* Dark mode footer color */
 }
 
 .dark-mode-toggle {
