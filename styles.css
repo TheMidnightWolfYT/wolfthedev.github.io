@@ -8,20 +8,23 @@ body {
 }
 
 body.dark-mode {
-    background-color: #333;
-    color: #fff;
+    background-color: #222; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
 }
 
 header {
-    background-color: #333;
+    background-color: #007bff; /* Light mode header color */
     color: #fff;
     padding: 1em;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 section {
     max-width: 800px;
-    margin: 2em auto;
+    margin: 6em auto 2em; /* Adjusted margin to accommodate fixed header */
     padding: 2em;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,7 +32,7 @@ section {
 }
 
 section.dark-mode {
-    background-color: #444;
+    background-color: #333; /* Dark mode section background color */
 }
 
 h1, h2, h3 {
@@ -52,13 +55,14 @@ p {
 }
 
 footer {
-    background-color: #333;
+    background-color: #007bff; /* Light mode footer color */
     color: #fff;
     text-align: center;
     padding: 1em;
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .dark-mode-toggle {
