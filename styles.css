@@ -43,13 +43,8 @@ section.dark-mode {
     color: #fff;
 }
 
-h1, h2, h3 {
-    color: #333;
-}
-
-p {
-    line-height: 1.6;
-    color: #555;
+h1, h2, h3, p {
+    color: #fff; /* Set text color to #fff in dark mode */
 }
 
 .portfolio-item {
