@@ -32,15 +32,15 @@ body.dark-mode header {
 section {
     flex: 1;
     max-width: 800px;
-    margin: 6em auto 2em;
+    margin: 2em auto;
     padding: 2em;
-    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 section.dark-mode {
     background-color: #333;
+    color: #fff;
 }
 
 h1, h2, h3 {
@@ -66,9 +66,6 @@ footer {
     margin-top: auto;
     background-color: #f8f9fa; /* Light mode footer color */
     color: #333;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 body.dark-mode footer {
@@ -84,7 +81,7 @@ body.dark-mode footer {
     z-index: 1000; /* Ensure toggle is above content */
 }
 
-/* Added sticky navigation styles */
+/* Added light and dark mode for navigation styles */
 .navbar {
     background-color: #343a40;
     position: sticky;
@@ -93,5 +90,6 @@ body.dark-mode footer {
 }
 
 body.dark-mode .navbar {
-    background-color: #343a40;
+    background-color: #555; /* Dark mode navigation bar color */
+    color: #fff; /* Dark mode navigation text color */
 }
