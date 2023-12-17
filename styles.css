@@ -21,12 +21,12 @@ header, footer {
 }
 
 header {
-    background-color: #343a40; /* Dark mode header color */
-    color: #fff;
+    background-color: #dcdcdc; /* Light mode header color */
+    color: #333;
 }
 
 body.dark-mode header {
-    background-color: #343a40; /* Dark mode header color */
+    background-color: #333; /* Dark mode header color */
 }
 
 section {
@@ -43,7 +43,7 @@ section.dark-mode {
 }
 
 h1, h2, h3, p {
-    color: #333; /* Set text color to #333 in light mode */
+    color: #fff; /* Set text color to #fff in dark mode */
 }
 
 .portfolio-item {
@@ -58,12 +58,12 @@ h1, h2, h3, p {
 
 footer {
     margin-top: auto;
-    background-color: #343a40; /* Dark mode footer color */
-    color: #fff;
+    background-color: #dcdcdc; /* Light mode footer color */
+    color: #333;
 }
 
 body.dark-mode footer {
-    background-color: #343a40; /* Dark mode footer color */
+    background-color: #333; /* Dark mode footer color */
 }
 
 .dark-mode-toggle {
@@ -77,13 +77,13 @@ body.dark-mode footer {
 
 /* Added light and dark mode for navigation styles */
 .navbar {
-    background-color: #343a40;
+    background-color: #dcdcdc; /* Light mode navigation bar color */
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 body.dark-mode .navbar {
-    background-color: #343a40; /* Dark mode navigation bar color */
+    background-color: #333; /* Dark mode navigation bar color */
     color: #fff; /* Dark mode navigation text color */
 }
