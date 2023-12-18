@@ -75,7 +75,7 @@ body.dark-mode footer {
     z-index: 1000; /* Ensure toggle is above content */
 }
 
-/* Added light and dark mode for navigation styles */
+/* Adjusted light and dark mode for navigation styles */
 .navbar {
     background-color: #dcdcdc; /* Light mode navigation bar color */
     position: sticky;
