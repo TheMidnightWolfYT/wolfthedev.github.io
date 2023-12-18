@@ -39,11 +39,11 @@ section {
 }
 
 section.dark-mode {
-    background-color: #333;
+    background-color: #1a1a1a; /* Darker background in dark mode */
 }
 
 h1, h2, h3, p {
-    color: #fff; /* Set text color to #fff in dark mode */
+    color: #000; /* Set text color to #000 in light mode */
 }
 
 .portfolio-item {
